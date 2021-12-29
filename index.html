@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+    <title>- Carrito PreShop - C.H - CoderDescuentos </title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="#"><img src="img/cart2.jpg" alt=""> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                        
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="img/cart1.jpeg" placeholder = "Carrito" class="nav-link dropdown-toggle img-fluid" height="200px"
+                                    width="200px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="false"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Ir a Pagar</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Indumentaria</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shirt1.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">10000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Remera Converse Original</li> 
+                            <li>Descuento de 10% para compras de contado.</li>
+                            
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Indumentaria </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shirt3.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">7400</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Pantalon Adidas Original</li> 
+                            <li>Descuento de 10% para compras de contado.</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Indumentaria</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shirt4.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">6700</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Pantalon Adidas Original</li> 
+                            <li>Descuento de 10% para compras de contado.</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Calzado</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shoe1.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">4000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                        <li>
+                            Zapatillas Adidas original - con descuento del 15% para pagos de contado efectivo</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Calzado</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shoe2.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">4200</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>
+                                Zapatillas Adidas original - con descuento del 15% para pagos de contado efectivo</li>
+                            </ul>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Calzado</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shoe3.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">3599</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>
+                                Zapatillas Adidas original - con descuento del 15% para pagos de contado efectivo</li>
+                            </ul>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Calzado</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shoe4.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">4299</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>
+                                Zapatillas Adidas original - con descuento del 15% para pagos de contado efectivo</li>
+                            </ul>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Gorra Deportiva</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/gorra2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">1869</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Gorra Adidas original - Con descuento del 20% para pagos de contado efectivo.</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Gorra Deportiva</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/gorra1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">1960</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Gorra Adidas original - Con descuento del 20% para pagos de contado efectivo.</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        
+    </main>
+
+    <footer class="bg-white">
+        <p class="text-center m-0 text-muted">Simulador Productos - CoderHouse - Cáceres Requena</p>
+        
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+    <script src="js/popper.min.js"></script>
+
+</body>
+
+</html>
